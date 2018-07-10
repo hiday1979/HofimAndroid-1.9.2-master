@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="coast_item_min_height">60dp</dimen>
+    <dimen name="coast_detail_text_margin">20dp</dimen>
+    <dimen name="main_page_fab_dimen">60dp</dimen>
+    <dimen name="marker_text_margin">10dp</dimen>
+    <dimen name="marker_info_window_padding">20dp</dimen>
+    <dimen name="exit_fab_dimen">50dp</dimen>
+    <dimen name="coast_details_button_dimen">20dp</dimen>
+    <dimen name="coast_activity_horizontal_margin">8dp</dimen>
+    <dimen name="coast_activity_vertical_margin">8dp</dimen>
+    <dimen name="defaultFabImageSize">40dp</dimen>
+    <dimen name="detail_item_image_vertical_margin">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

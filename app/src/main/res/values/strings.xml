@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">חופים</string>
+    <string name="title_activity_coast_map">חופים</string>
+
+    <!-- coast details -->
+    <string name="water_temperature">טמפרטורת המים</string>
+    <string name="wind_bearing">כיוון הרוח</string>
+    <string name="wind_speed">מהירות הרוח</string>
+    <string name="wave_height">גובה הגלים</string>
+    <string name="jelly_state">מצב המדוזות</string>
+    <string name="radiation">רמת קרינה</string>
+    <string name="contamination">רמת זיהום</string>
+    <string name="crowded">רמת צפיפות</string>
+    <string name="jellyfish">כמות המדוזות</string>
+    <string name="centimeters">ס\"מ</string>
+    <string name="kmph">קמ\"ש</string>
+    <string name="celsious">°</string>
+    <string name="WaveFrequency">תדירות הגלים</string>
+    <string name="windSpeedType">סוג הרוח</string>
+    <string name="waterTemperatureType">סוג הטמפרטורה</string>
+    <string name="windDirectionValue_Deg">כיוון הרוח במעלות</string>
+    <string name="waveDirection">כיוון הגלים</string>
+    <string name="waveFrequancyPerSec">תדירות הגלים לשניה</string>
+    <string name="humidityPercent">אחוזי לחות</string>
+    <string name="airTemperatureFeelsLikeC">מרגיש כמו</string>
+    <string name="airTemperature_C">טמפרטורת אוויר</string>
+    <string name="windGustValue_Kmph">משב קוח</string>
+    <string name="airMaxTemperature_C">טמפרטורה מקסימלית</string>
+    <string name="airMinTemperature_C">טמפרטורה מינימאלית</string>
+
+    <!-- navigation drawer -->
+    <string name="drawer_facebook">פייסבוק</string>
+    <string name="drawer_shear">שתף</string>
+    <string name="drawer_website">אתר</string>
+    <string name="drawer_store">דרגו אותנו</string>
+    <string name="open_drawer">פתח מגירת ניווט</string>
+    <string name="close_drawer">סגור מגירת ניווט</string>
+
+    <!-- toolbar -->
+    <string name="action_settings">הגדרות</string>
+
+    <!-- navigation drawer -->
+    <string name="drawer_item_1">פייסבוק</string>
+    <string name="drawer_item_2">אתר</string>
+    <string name="drawer_item_3">דרגו אותנו</string>
+
+    <!-- boom menu button Jellyfish -->
+    <string name="no_jellyfish">אין מדוזות</string>
+    <string name="few_jellyfish">מעט מדוזות</string>
+    <string name="some_jellyfish">הרבה מדוזות</string>
+    <string name="lots_jellyfish">המון מדוזות</string>
+    <string name="title_activity_forecast">תחזית</string>
+    <string name="section_format">לא להתייחס</string>
+
+    <!--  forcast activity -->
+    <string name="todatForcast">מחר</string>
+    <string name="tomorrowForcast">מחרתיים</string>
+    <string name="twoDayForcast">שלושה ימים</string>
+    <string name="sunday">יום ראשון</string>
+    <string name="monday">יום שני</string>
+    <string name="tuesday">יום שלישי</string>
+    <string name="wednesday">יום רביעי</string>
+    <string name="thursday">יום חמישי</string>
+    <string name="friday">יום שישי</string>
+    <string name="saturday">יום שבת</string>
+
+    <!-- snackbar msg -->
+    <string name="fav_beach_full">רשימת החופים האהובים מלאה  הסירו חוף להמשך</string>
+
+    <!-- wind bearings -->
+    <string name="N">צפונית</string>
+    <string name="NNE">צפון צפון מזרח</string>
+    <string name="NE">צפון מזרח</string>
+    <string name="ENE">מזרחית צפון מזרחית</string>
+    <string name="E">מזרחית</string>
+    <string name="ESE">מזרחית דרום מזרחית</string>
+    <string name="SE">דרומית מזרחית</string>
+    <string name="SSE">דרום דרום מזרחית</string>
+    <string name="S">דרומית</string>
+    <string name="SSW">דרום דרום מערבית</string>
+    <string name="SW">דרום מערבית</string>
+    <string name="WSW">מערבית דרום מערבית</string>
+    <string name="W">מערבית</string>
+    <string name="WNW">מערבית צפון מערבית</string>
+    <string name="NW">צפון מערבית</string>
+    <string name="NNW">צפון צפון מערבית</string>
+    <string name="action_about">אודות</string>
+    <string name="title_activity_about">אודות</string>
+    <string name="share">שתף</string>
+    <string name="facebook">פייסבוק</string>
+    <string name="site">אתר</string>
+    <string name="enter">היכנס</string>
+    <string name="playstore">Playstore</string>
+    <string name="rateus">דרגו אותנו</string>
+    <string name="title_activity_maps">חופים</string>
+    <string name="gps_network_not_enabled">שירותי מיקום או רשת סלולרית לא מופעלים</string>
+    <string name="open_location_settings">הצג הגדרות</string>
+    <string name="Cancel">בטל</string>
+    <string name="close_app">לחץ שוב ליציאה</string>
+    <string name="ad_accesibility">* חופים בהם קיים חניון ובו חניות מסומנות לנכים\n
+    * מסלול גישה מונגש עד לקו המים\n
+    * עליות נגישות למדרכה\n
+    * סככות נגישות ומוצלות\n
+    * שירותי נכים ומקלחות נגישות\n
+    * מסעדות בחוף יחויבו בהסדרי נגישות</string>
+    <string name="ad_blue_flag">* הדגל הכחול מוענק לחופים שעומדים בתקן בין לאומי מחמיר בכמה קריטריונים:\n
+    * עמידה בבדיקות מחמירות של איכות מי הרחצה שנעשות לעיתים קרובות באזורי הרחצה\n
+    * תחזוקה של החוף מבחינת נקיון, מתקני שירותים, בטיחות ואיכות הסביבה\n
+    * כמות מצילים מספקת ומי שתיה זמינים בחוף</string>
+    <string name="whiteFlag">דגל לבן</string>
+    <string name="redFlag">דגל אדום</string>
+    <string name="blackFlag">דגל שחור</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="distance">מיין לפי</string>
+
+
+</resources>

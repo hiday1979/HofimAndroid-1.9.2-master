@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bbd3</color>
+    <color name="colorPrimaryDark">#0096A6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkTransparent">#77615d5d</color>
+    <color name="coastDetailsItemsBackground">#2676B5</color>
+    <color name="defaultFabRippleColor">#7498ec</color>
+    <color name="defaultFabColorBackground">#ffffff</color>
+    <color name="defaultFabCircleColor">#2676B5</color>
+    <color name="dcCardViewColor">#00bbd3</color>
+</resources>

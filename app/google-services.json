@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "232118681124",
+    "firebase_url": "https://hofim-1082.firebaseio.com",
+    "project_id": "hofim-1082",
+    "storage_bucket": "hofim-1082.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232118681124:android:888461d9a155307b",
+        "android_client_info": {
+          "package_name": "com.wigitech.yam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232118681124-k63ao288j9hbjs1vk3n5q4284ehvdala.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "232118681124-melv6ro49v00fmfoh2bfepm2c1m4ursl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE1ZS9EWywBDVP7n5w_kb-HOIB_fN2R0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

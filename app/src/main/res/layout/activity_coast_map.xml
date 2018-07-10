@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CoastMapActivity"
+    android:id="@+id/mainView"
+    android:layoutDirection="rtl">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        android:paddingStart="20dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:subtitleTextColor="@color/cardview_light_background"
+            app:popupTheme="@style/Widget.AppCompat.PopupMenu"
+            app:titleTextColor="#fff"
+            >
+
+            <ImageButton
+                android:id="@+id/imManu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:tint="#fff"
+                android:background="@drawable/ic_action_click"
+                />
+
+            <ImageButton
+                android:id="@+id/imSearch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="250dp"
+                android:background="@drawable/ic_action_search"
+
+                />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/wsvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="0dp"
+                android:visibility="gone"
+                style="@style/SearchViewStyle"
+                >
+
+            </android.support.v7.widget.SearchView>
+
+            <ImageButton
+                android:id="@+id/imSinon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/ic_action_sinon"
+
+                />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".activities/MainActivity"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+
+
+    <com.github.akashandroid90.imageletter.MaterialLetterIcon
+        android:id="@+id/open_favorite_coast1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/favorite_unselected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="14dp"
+        app:shape_color="@color/colorPrimaryDark"
+        app:shape_type="circle"
+        app:initials="true"
+        app:initials_number="4"
+        app:letters_number="4"
+        app:letter_size="17"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.github.akashandroid90.imageletter.MaterialLetterIcon
+        android:id="@+id/open_favorite_coast2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="14dp"
+        app:letter_size="17"
+        android:src="@drawable/favorite_unselected"
+        app:layout_constraintBottom_toTopOf="@+id/open_favorite_coast1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shape_color="@color/colorPrimaryDark"
+        app:shape_type="circle"
+        app:initials="true"
+        app:initials_number="4"
+        app:letters_number="4"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.github.akashandroid90.imageletter.MaterialLetterIcon
+        android:id="@+id/open_favorite_coast3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:initials="true"
+        app:initials_number="4"
+        app:letters_number="4"
+        app:letter_size="17"
+        app:shape_color="@color/colorPrimaryDark"
+        app:shape_type="circle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/favorite_unselected"
+        app:layout_constraintBottom_toTopOf="@+id/open_favorite_coast2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/svHofim"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/map" />
+
+
+    <com.github.akashandroid90.imageletter.MaterialLetterIcon
+        android:id="@+id/focus_my_location_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:initials="true"
+        app:initials_number="4"
+        app:letters_number="4"
+        app:shape_type="circle"
+        app:shape_color="@color/colorPrimaryDark"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="19.5dp"
+        android:src="@drawable/my_loc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        tools:layout_editor_absoluteX="334dp" />
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb_jelly"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="12.6dp"
+        android:background="@mipmap/ic_launcher_many_jell"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+        app:bmb_normalColor="#00000000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+        app:bmb_shadowColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/svHofim"
+        tools:layout_editor_absoluteX="334dp" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/rvResult"
+        android:background="#d9d7d7"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>

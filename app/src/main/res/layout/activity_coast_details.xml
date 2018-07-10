@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:background="#afafafaf"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/navigateByWazeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/waze"
+        app:layout_constraintLeft_toRightOf="@+id/accessibilityButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/accessibilityButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/accessibility"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/blueFlagButton"
+        app:layout_constraintRight_toLeftOf="@+id/navigateByWazeButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/blueFlagButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/blue_flag"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toRightOf="@+id/toggleFavoriteButton"
+        app:layout_constraintRight_toLeftOf="@+id/accessibilityButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/toggleFavoriteButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/favorite_unselected"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/blueFlagButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fully_rounded_background"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accessibilityButton"
+        app:layout_constraintVertical_bias="0.18">
+
+        <TableRow
+            style="@style/coastDetailItem.topCoastDetailItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/waterTemperatureTitle"
+                style="@style/coastDetailElement.coastDetailPropertyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/water_temperature"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/waterTemperatureValue"
+                style="@style/coastDetailElement.coastDetailValueItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow style="@style/coastDetailItem.innerCoastDetailItem">
+
+            <TextView
+                android:id="@+id/windDirectionTitle"
+                style="@style/coastDetailElement.coastDetailPropertyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wind_bearing"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/windDirectionValue"
+                style="@style/coastDetailElement.coastDetailValueItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow style="@style/coastDetailItem.innerCoastDetailItem">
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/coastDetailElement.coastDetailPropertyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wind_speed"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/windSpeedValue"
+                style="@style/coastDetailElement.coastDetailValueItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow style="@style/coastDetailItem.innerCoastDetailItem">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/coastDetailElement.coastDetailPropertyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wave_height"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/waveHeightValue"
+                style="@style/coastDetailElement.coastDetailValueItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow style="@style/coastDetailItem.bottomCoastDetailItem">
+
+            <TextView
+                style="@style/coastDetailElement.coastDetailPropertyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jelly_state"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/jellyFishTypeValue"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/detail_item_image_vertical_margin"
+                android:layout_marginTop="@dimen/detail_item_image_vertical_margin"
+                app:srcCompat="@drawable/no_m" />
+
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/exitButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/cancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</android.support.constraint.ConstraintLayout>

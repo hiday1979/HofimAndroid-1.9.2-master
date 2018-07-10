@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HofimAndroid-37774db18c4312f606a497a5c070eceb0037cf80.iml" filepath="$PROJECT_DIR$/../HofimAndroid-37774db18c4312f606a497a5c070eceb0037cf80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+    </modules>
+  </component>
+</project>

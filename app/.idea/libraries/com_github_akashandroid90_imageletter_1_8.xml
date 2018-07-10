@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.akashandroid90:imageletter-1.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/6f22a5ae5c36a84fdae377890327db2d8a9aa44c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6f22a5ae5c36a84fdae377890327db2d8a9aa44c/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.akashandroid90/imageletter/1.8/513964cc9e6914ba0f8cc79c3d906c4e9018fbf5/imageletter-1.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
