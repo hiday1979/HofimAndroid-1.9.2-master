@@ -34,8 +34,8 @@ android {
         applicationId "com.wigitech.yam"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 32
-        versionName "3.8.1"
+        versionCode 40
+        versionName "1.9.2"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
     }

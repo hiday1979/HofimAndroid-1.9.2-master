@@ -45,10 +45,10 @@
     <string name="drawer_item_3">דרגו אותנו</string>
 
     <!-- boom menu button Jellyfish -->
-    <string name="no_jellyfish">אין מדוזות</string>
-    <string name="few_jellyfish">מעט מדוזות</string>
-    <string name="some_jellyfish">הרבה מדוזות</string>
-    <string name="lots_jellyfish">המון מדוזות</string>
+    <string name="no_jellyfish">החוף נקי ממדוזות</string>
+    <string name="few_jellyfish">יש קצת מדוזות בחוף</string>
+    <string name="some_jellyfish"> יש מדוזות בחוף , אולי תחפש חוף אחר ?</string>
+    <string name="lots_jellyfish"> יש מדוזות בחוף , אולי תחפש חוף אחר ?</string>
     <string name="title_activity_forecast">תחזית</string>
     <string name="section_format">לא להתייחס</string>
 

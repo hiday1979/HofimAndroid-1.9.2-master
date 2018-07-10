@@ -225,7 +225,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                     Beach b = result.get(position);
                                     for (int i = 0; i < allBeaches.size(); i++) {
                                         if (allBeaches.get(i).getBeachId() == b.getBeachId()) {
-                                            b = allBeaches.get(i + 1);
+                                            b = allBeaches.get(i);
                                             break;
                                         }
                                     }
@@ -602,7 +602,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                                     mjellyfish.setLevel(0);
                                     mTracker.send(new HitBuilders.EventBuilder()
                                             .setCategory("דיווח מדוזות")
-                                            .setAction("אין מדוזות")
+                                            .setAction("החוף נקי ממדוזות")
                                             .build());
                                     break;
                                 case 1:

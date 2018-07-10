@@ -166,11 +166,11 @@ public class CoastDetailsActivity2 extends AppCompatActivity {
         windBearing.put("NNW", "צפונית צפון מערבית");
 
         //set map for jellys
-        jellyType.put("NO_VALUE", "אין דיווחים");
-        jellyType.put("NONE", "אין מדוזות");
-        jellyType.put("FEW", "מעט מדוזות");
-        jellyType.put("SOME", "מעט מדוזות");
-        jellyType.put("ALOT", "המון מדוזות");
+        jellyType.put("null", "אין דיווחים");
+        jellyType.put("0", "החוף נקי ממדוזות");
+        jellyType.put("3", " יש קצת מדוזות בחוף");
+        jellyType.put("1", " יש קצת מדוזות בחוף");
+        jellyType.put("2", " יש מדוזות בחוף , אולי תחפש חוף אחר ?");
 
 
         //load current beach from sqlite
@@ -394,8 +394,8 @@ public class CoastDetailsActivity2 extends AppCompatActivity {
 //            JSONArray hourlyForcast0 = dailyForcast0.getJSONArray("hourlyForcast");
 //            JSONObject hourlyForcast0_0 = hourlyForcast0.getJSONObject(hourOfDay);
 //            JSONObject forcast0 = hourlyForcast0_0.getJSONObject("forcast");
-//            JSONObject reports = body.getJSONObject("reports");
-
+            JSONObject reports = metaData.getJSONObject("reports");
+            Log.i(TAG, "reports: " + reports);
             //create today DetailedBeachHourlyForcast
             dbhfToday = new DetailedBeachHourlyForecast(
                     forcast0.getString("swellDir16Point"),
@@ -421,7 +421,7 @@ public class CoastDetailsActivity2 extends AppCompatActivity {
                     metaData.getString("city"),
 //                    reports.getString("jellyFishType"),
 //                    reports.getString("cleanType"),
-                    "NONE",
+                    reports.getString("jellyfish"),
                     "cleanType",
                     dailyStats0.getInt("maxtempC"),
                     dailyStats0.getInt("mintempC")
@@ -581,16 +581,16 @@ public class CoastDetailsActivity2 extends AppCompatActivity {
     private int getJellyIcon(String jellyfishtype) {
         jellyfishtype = jellyfishtype.toLowerCase();
         switch (jellyfishtype) {
-            case "none":
+            case "null":
                 return R.mipmap.ic_launcher_no_jell;
             //return R.drawable.no_m;
-            case "few":
+            case "1":
                 return R.mipmap.ic_launcher_lit_jell;
             //return R.drawable.few_m;
-            case "some":
+            case "3":
                 return R.mipmap.ic_launcher_lit_jell;
             //return R.drawable.few_m;
-            case "lots":
+            case "2":
                 return R.mipmap.ic_launcher_many_jell;
             //return R.drawable.alot_m;
         }
